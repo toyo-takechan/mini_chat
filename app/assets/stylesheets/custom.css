@@ -1,0 +1,149 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* scssの場合は以下の記述 */
+  /* background-image: image_url('sora1.jpeg'); */
+  background-image: url(/assets/autom1.jpeg);
+  background-size:cover;
+}
+
+.header {
+  display: flex;
+  /* background-color: palevioletred; */
+  height: 100px;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  /* flex: 1 0 auto; */
+    /* flex-grow, flex-shrink, flex-basis の順 */
+  min-height: calc(100vh - 150px -150px);/* ビューポートの高さ(100vh)からヘッダーとフッターの高さを引く */
+  /* background-color: yellow; */
+}
+
+.sidebar {
+  display: flex;
+  /* background-color: aqua; */
+  width: 300px;
+}
+
+.footer{
+  display: flex;
+  /* background-color: #333; */
+  height: 100px;
+}
+
+.title-h1 {
+  color: #5A2C00;
+  font-size: 80px;
+  text-align: center;
+}
+
+.button-group {
+  font-size: 120px;
+  margin-top: 20px;
+}
+
+.button-group a {
+  text-decoration: none;
+}
+
+.btn {
+  cursor: pointer;
+  border: 5px;
+  border-radius: 15px;
+  padding: 10px 20px;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.btn-primary {
+  /* background-color: #007BFF; */
+  background-color: #FFA500;
+  color: #fff;
+  margin-left: 100px;
+}
+
+.btn-secondary {
+  /* background-color: #6c757d; */
+  background-color: #228B22;
+  color: #fff;
+  margin-left: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+/* .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  display: flex; */
+  /* Flexbox を有効にする */
+  /* flex-direction: row; */
+  /* 子要素を横並びにする */
+/* } */
+
+/* ヘッダー */
+/* .header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+} */
+
+/* サイドバー */
+/* .sidebar {
+  width: 250px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+} */
+
+/* .sidebar a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+} */
+
+/* .sidebar a:hover {
+  background-color: #eee;
+} */
+
+/* メインコンテンツ */
+/* .main-content {
+  flex: 1;
+  /* 余ったスペースをすべて取る */
+  /* padding: 20px;
+} */
+
+/* フッター */
+/* .footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+} */
